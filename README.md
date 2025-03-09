@@ -93,5 +93,5 @@ node meomundep_discord.js
 - **Channel:** [Visit the Channel](https://t.me/KeoAirDropFreeNee)
 
 ## License
-This project is for educational purposes only. Use responsibly!
+Do not steal or try to copy it, use it at your own risk, do not dm me and ask for nonsense question.
 
