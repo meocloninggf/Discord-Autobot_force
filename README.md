@@ -36,12 +36,14 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
 3. **Configure the bot:**
    Edit `configs.json` to adjust settings.
 4. **Prepare input files:**
-   - `tokens.txt`: List of Discord tokens (one per line).
-   - `chat_ids.txt`: List of channel IDs for messaging.
+   - `tokens.txt`: List of Discord tokens (one per line). 
+   - `chat_ids.txt`: List of channel IDs for messaging.   
    - `proxies.txt`: List of proxies (one per line, optional).
-   - `join_servers.txt`: List of Discord invite codes.
+   - `join_servers.txt`: List of Discord invite codes.    
    - `leave_servers.txt`: List of server IDs to leave.
    - `messages.yaml`: Messages categorized by language.
+  
+Get tokens, chatID, channelID from here: https://t.me/KeoAirDropFreeNee/1570 and https://t.me/KeoAirDropFreeNee/1569
 
 ## Configuration (`configs.json`)
 | Setting           | Description                            |
@@ -55,18 +57,29 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
 Example `configs.json`:
 ```json
 {
-  "auto_chat": true,
-  "delete_message": true,
-  "join_server": true,
+  "delayBetweenAccounts": 1,
+  "delayEachChat": 120,
+  "delayEachChannel": 360,
   "leave_server": false,
-  "language": "en"
+  "delete_message": false,
+  "join_server": false,
+  "auto_chat": true,
+  "language": "en",
+  "timeToRestartAllAccounts": 86400,
+  "maxAccountsAtOnce": 10
 }
+
 ```
 
 ## Usage
 Run the bot with:
 ```bash
 node meomundep_discord.js
+```
+
+if you want to update the bot:
+```bash
+git pull
 ```
 
 ## How It Works
